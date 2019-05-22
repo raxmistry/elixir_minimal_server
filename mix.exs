@@ -27,7 +27,8 @@ defmodule MinimalServer.MixProject do
       {:poison, "~> 3.0"},
       {:plug, "~> 1.6"},
       {:cowboy, "~> 2.6"},
-      {:plug_cowboy, "~>2.0"}
+      {:plug_cowboy, "~>2.0"},
+      {:cors_plug, "~> 2.0"}
     ]
   end
 end

@@ -2,6 +2,8 @@ defmodule MinimalServer.Endpoint do
   use Plug.Router
 
 
+  plug CORSPlug, origin: ["http://localhost:8080"]
+
   plug(:match)
 
   plug(Plug.Parsers,
