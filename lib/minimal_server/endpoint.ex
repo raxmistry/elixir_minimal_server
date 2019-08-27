@@ -14,7 +14,8 @@ defmodule MinimalServer.Endpoint do
 
   plug(:dispatch)
 
-  forward("/bot", to: MinimalServer.Router)
+  forward("/bot", to: MinimalServer.BotRouter)
+  forward("/invoices", to: MinimalServer.InvoicesRouter)
 
   match _ do 
     send_resp(conn, 404, "Requested page cannot be found")

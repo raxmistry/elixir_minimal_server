@@ -1,4 +1,4 @@
-defmodule MinimalServer.Router do
+defmodule MinimalServer.BotRouter do
   use Plug.Router
 
   plug(:match)
